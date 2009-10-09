@@ -1,0 +1,26 @@
+#
+# configuration for DaoPay payments via 
+#
+production:
+  gateway_url:  http://daopay.com/pay/
+  appcode:      54460
+  success_url:  http://localhost/I_am_happy
+  currency:     EUR
+  style:        
+  mcx:
+    
+testing:
+  gateway_url:  http://daopay.com/pay/
+  appcode:      54460
+  success_url:  http://localhost/I_am_happy
+  currency:     EUR
+  style:        
+  mcx:
+    
+development:
+  gateway_url:  http://daopay.com/pay/
+  appcode:      54460
+  success_url:  http://localhost/I_am_happy
+  currency:     EUR
+  style:        
+  mcx:          
