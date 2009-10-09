@@ -1,0 +1,32 @@
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 12:46:06) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: new):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-09 12:46:21) [GET]
+
+ActionController::RoutingError (No route matches "/DaoPay" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 12:46:29) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: new):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 12:47:31) [GET]
+
+ActionView::MissingTemplate (Missing template dao_pay/index.erb in view path app/views):
+  app/controllers/dao_pay_controller.rb:4:in `index'
+
+Rendering rescues/layout (internal_server_error)
