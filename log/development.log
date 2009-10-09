@@ -30,3 +30,28 @@ ActionView::MissingTemplate (Missing template dao_pay/index.erb in view path app
   app/controllers/dao_pay_controller.rb:4:in `index'
 
 Rendering rescues/layout (internal_server_error)
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 12:48:33) [GET]
+Rendering dao_pay/index
+Completed in 201ms (View: 199, DB: 0) | 200 OK [http://localhost/DaoPay]
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 12:50:02) [GET]
+Rendering dao_pay/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/DaoPay]
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 12:50:33) [GET]
+Rendering dao_pay/index
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/DaoPay]
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 12:50:48) [GET]
+Rendering dao_pay/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/DaoPay]
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 12:50:59) [GET]
+Rendering dao_pay/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/DaoPay]
