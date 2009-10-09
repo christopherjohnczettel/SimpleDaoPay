@@ -1361,3 +1361,299 @@ Completed in 12ms (View: 4, DB: 0) | 200 OK [http://localhost/DaoPay/new]
 Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 16:40:44) [GET]
 Rendering dao_pay/index
 Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/DaoPay]
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateDaoPayPayments (20091009144633)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "dao_pay_payments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSQLite3::SQLException: table dao_pay_payments has no column named tid: CREATE UNIQUE INDEX "index_dao_pay_payments_on_tid" ON "dao_pay_payments" ("tid")[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateDaoPayPayments (20091009144633)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "dao_pay_payments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSQLite3::SQLException: table dao_pay_payments has no column named tid: CREATE UNIQUE INDEX "index_dao_pay_payments_on_tid" ON "dao_pay_payments" ("tid")[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateDaoPayPayments (20091009144633)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "dao_pay_payments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20091009144633')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("dao_pay_payments")[0m
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 17:31:20) [GET]
+Rendering dao_pay/index
+Completed in 99ms (View: 97, DB: 0) | 200 OK [http://localhost/DaoPay]
+
+
+Processing DaoPayController#new (for 127.0.0.1 at 2009-10-09 17:31:23) [GET]
+Rendering dao_pay/new
+Completed in 346ms (View: 183, DB: 0) | 200 OK [http://localhost/DaoPay/new]
+
+
+Processing DaoPayController#new (for 127.0.0.1 at 2009-10-09 17:31:46) [GET]
+  [4;36;1mSQL (39.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `validate_uniqueness_of' for #<Class:0x23ed6d4>):
+  app/models/dao_pay_payment.rb:9
+  app/controllers/dao_pay_controller.rb:7:in `new'
+
+Rendered rescues/_trace (103.0ms)
+Rendered rescues/_request_and_response (1.8ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DaoPayController#new (for 127.0.0.1 at 2009-10-09 17:34:17) [GET]
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `aasm_intial_state' for #<Class:0x22f8c74>):
+  app/models/dao_pay_payment.rb:16
+  app/controllers/dao_pay_controller.rb:7:in `new'
+
+Rendered rescues/_trace (37.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DaoPayController#new (for 127.0.0.1 at 2009-10-09 17:34:20) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `aasm_intial_state' for #<Class:0x2519fe4>):
+  app/models/dao_pay_payment.rb:16
+  app/controllers/dao_pay_controller.rb:7:in `new'
+
+Rendered rescues/_trace (35.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DaoPayController#new (for 127.0.0.1 at 2009-10-09 17:34:29) [GET]
+
+NoMethodError (undefined method `transition' for #<AASM::SupportingClasses::Event:0x240309c>):
+  app/models/dao_pay_payment.rb:24
+  /Library/Ruby/Gems/1.8/gems/rubyist-aasm-2.1.1/lib/aasm/event.rb:13:in `instance_eval'
+  /Library/Ruby/Gems/1.8/gems/rubyist-aasm-2.1.1/lib/aasm/event.rb:13:in `initialize'
+  /Library/Ruby/Gems/1.8/gems/rubyist-aasm-2.1.1/lib/aasm/aasm.rb:57:in `new'
+  /Library/Ruby/Gems/1.8/gems/rubyist-aasm-2.1.1/lib/aasm/aasm.rb:57:in `aasm_event'
+  app/models/dao_pay_payment.rb:23
+  app/controllers/dao_pay_controller.rb:7:in `new'
+
+Rendered rescues/_trace (113.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DaoPayController#new (for 127.0.0.1 at 2009-10-09 17:35:10) [GET]
+
+NoMethodError (undefined method `transition' for #<AASM::SupportingClasses::Event:0x25f2f9c>):
+  app/models/dao_pay_payment.rb:24
+  /Library/Ruby/Gems/1.8/gems/rubyist-aasm-2.1.1/lib/aasm/event.rb:13:in `instance_eval'
+  /Library/Ruby/Gems/1.8/gems/rubyist-aasm-2.1.1/lib/aasm/event.rb:13:in `initialize'
+  /Library/Ruby/Gems/1.8/gems/rubyist-aasm-2.1.1/lib/aasm/aasm.rb:57:in `new'
+  /Library/Ruby/Gems/1.8/gems/rubyist-aasm-2.1.1/lib/aasm/aasm.rb:57:in `aasm_event'
+  app/models/dao_pay_payment.rb:23
+  app/controllers/dao_pay_controller.rb:7:in `new'
+
+Rendered rescues/_trace (37.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DaoPayController#new (for 127.0.0.1 at 2009-10-09 17:35:12) [GET]
+
+NoMethodError (undefined method `transition' for #<AASM::SupportingClasses::Event:0x2496db0>):
+  app/models/dao_pay_payment.rb:24
+  /Library/Ruby/Gems/1.8/gems/rubyist-aasm-2.1.1/lib/aasm/event.rb:13:in `instance_eval'
+  /Library/Ruby/Gems/1.8/gems/rubyist-aasm-2.1.1/lib/aasm/event.rb:13:in `initialize'
+  /Library/Ruby/Gems/1.8/gems/rubyist-aasm-2.1.1/lib/aasm/aasm.rb:57:in `new'
+  /Library/Ruby/Gems/1.8/gems/rubyist-aasm-2.1.1/lib/aasm/aasm.rb:57:in `aasm_event'
+  app/models/dao_pay_payment.rb:23
+  app/controllers/dao_pay_controller.rb:7:in `new'
+
+Rendered rescues/_trace (39.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DaoPayController#new (for 127.0.0.1 at 2009-10-09 17:35:13) [GET]
+
+NoMethodError (undefined method `transition' for #<AASM::SupportingClasses::Event:0x2386f4c>):
+  app/models/dao_pay_payment.rb:24
+  /Library/Ruby/Gems/1.8/gems/rubyist-aasm-2.1.1/lib/aasm/event.rb:13:in `instance_eval'
+  /Library/Ruby/Gems/1.8/gems/rubyist-aasm-2.1.1/lib/aasm/event.rb:13:in `initialize'
+  /Library/Ruby/Gems/1.8/gems/rubyist-aasm-2.1.1/lib/aasm/aasm.rb:57:in `new'
+  /Library/Ruby/Gems/1.8/gems/rubyist-aasm-2.1.1/lib/aasm/aasm.rb:57:in `aasm_event'
+  app/models/dao_pay_payment.rb:23
+  app/controllers/dao_pay_controller.rb:7:in `new'
+
+Rendered rescues/_trace (40.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DaoPayController#new (for 127.0.0.1 at 2009-10-09 17:35:13) [GET]
+
+NoMethodError (undefined method `transition' for #<AASM::SupportingClasses::Event:0x2529854>):
+  app/models/dao_pay_payment.rb:24
+  /Library/Ruby/Gems/1.8/gems/rubyist-aasm-2.1.1/lib/aasm/event.rb:13:in `instance_eval'
+  /Library/Ruby/Gems/1.8/gems/rubyist-aasm-2.1.1/lib/aasm/event.rb:13:in `initialize'
+  /Library/Ruby/Gems/1.8/gems/rubyist-aasm-2.1.1/lib/aasm/aasm.rb:57:in `new'
+  /Library/Ruby/Gems/1.8/gems/rubyist-aasm-2.1.1/lib/aasm/aasm.rb:57:in `aasm_event'
+  app/models/dao_pay_payment.rb:23
+  app/controllers/dao_pay_controller.rb:7:in `new'
+
+Rendered rescues/_trace (40.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DaoPayController#new (for 127.0.0.1 at 2009-10-09 17:35:47) [GET]
+Rendering dao_pay/new
+Completed in 77ms (View: 4, DB: 0) | 200 OK [http://localhost/DaoPay/new]
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.1ms)[0m   [0;1mCREATE TABLE "dao_pay_payments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (2.5ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20091009144633')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (2.6ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (2.1ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateDaoPayPayments (20091009144633)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCREATE TABLE "dao_pay_payments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091009144633')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("dao_pay_payments")[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (224.9ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [4;35;1mSQL (164.6ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateDaoPayPayments (20091009144633)
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (618.9ms)[0m   [0;1mCREATE TABLE "dao_pay_payments" ("id" serial primary key, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;35;1mSQL (7.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091009144633')[0m
+  [4;36;1mSQL (81.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (212.2ms)[0m   [0;1mDROP TABLE "dao_pay_payments"[0m
+  [4;35;1mSQL (272.7ms)[0m   [0mCREATE TABLE "dao_pay_payments" ("id" serial primary key, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;36;1mSQL (18.9ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (64.2ms)[0m   [0;1mCREATE TABLE "dao_pay_payments" ("id" serial primary key, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;35;1mSQL (1.8ms)[0m   [0mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20091009144633')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (5.1ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [4;35;1mSQL (2.7ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateDaoPayPayments (20091009144633)
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (9.2ms)[0m   [0;1mCREATE TABLE "dao_pay_payments" ("id" serial primary key, "tid" integer, "appcode" integer, "user_id" integer, "state" character varying(255) DEFAULT E'pending', "duration" integer, "calltime" integer, "origin" character varying(255), "countrycode" character varying(255), "prodprice" float, "prodcurrency" character varying(255), "paid" float, "currency" character varying(255), "payout" float, "mcx" boolean, "mcxid" character varying(255), "mcxtimeout" integer, "mcxtariff" float, "mcxcurrency" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;35;1mSQL (2.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091009144633')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (5.2ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [4;35;1mSQL (2.9ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateDaoPayPayments (20091009144633)
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (9.1ms)[0m   [0;1mCREATE TABLE "dao_pay_payments" ("id" serial primary key, "tid" integer, "appcode" integer, "user_id" integer, "state" character varying(255) DEFAULT E'pending', "duration" integer, "calltime" integer, "origin" character varying(255), "countrycode" character varying(255), "prodprice" float, "prodcurrency" character varying(255), "paid" float, "currency" character varying(255), "payout" float, "mcx" boolean, "mcxid" character varying(255), "mcxtimeout" integer, "mcxtariff" float, "mcxcurrency" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;35;1mSQL (2.5ms)[0m   [0mCREATE UNIQUE INDEX "index_dao_pay_payments_on_tid" ON "dao_pay_payments" ("tid")[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20091009144633')[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT version FROM schema_migrations[0m

@@ -4,6 +4,8 @@ class DaoPayController < ApplicationController
   end
   
   def new
+    @myPayment = DaoPayPayment.new
+    
     @myParams = DaoPayPaymentRequest.new
     @myParams.price = rand(10) + 1
     @myParams.successurl = "http://localhost:3000/DaoPay/show"

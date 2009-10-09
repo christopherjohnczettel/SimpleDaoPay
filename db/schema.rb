@@ -9,6 +9,31 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 0) do
+ActiveRecord::Schema.define(:version => 20091009144633) do
+
+  create_table "dao_pay_payments", :force => true do |t|
+    t.integer  "tid"
+    t.integer  "appcode"
+    t.integer  "user_id"
+    t.string   "state",        :default => "pending"
+    t.integer  "duration"
+    t.integer  "calltime"
+    t.string   "origin"
+    t.string   "countrycode"
+    t.float    "prodprice"
+    t.string   "prodcurrency"
+    t.float    "paid"
+    t.string   "currency"
+    t.float    "payout"
+    t.boolean  "mcx"
+    t.string   "mcxid"
+    t.integer  "mcxtimeout"
+    t.float    "mcxtariff"
+    t.string   "mcxcurrency"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "dao_pay_payments", ["tid"], :name => "index_dao_pay_payments_on_tid", :unique => true
 
 end

@@ -51,3 +51,20 @@ class DaoPayPaymentRequest < ActiveRecord::BaseWithoutTable
     self.gateway_url + "?" +  elements.join('&')
   end
 end
+
+# == Schema Info
+# Schema version: 20091009144633
+#
+# Table name: dao_pay_payment_requests
+#
+#  affiliate   :string
+#  appcode     :integer
+#  country     :string
+#  currency    :string
+#  gateway_url :string
+#  mcx         :string
+#  method      :string
+#  orderno     :string
+#  price       :float
+#  style       :string
+#  successurl  :string
