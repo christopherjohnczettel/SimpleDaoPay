@@ -1,5 +1,19 @@
-DaoPayController->new()
+<h1>DaoPayController->new()</h1>
 
+<h3>iFrame:</h3>
+<%= daopay_iframe(@myParams) %>
+
+
+
+<h3>DaoPayIframeParameters</h3>
+<pre>
+<%= h(@myParams.to_xml) %>	
+</pre>
+<br/>
+
+<b>Payment URL:</b>
+<%= @myParams.payment_url %>
+<br/>
 
 
 

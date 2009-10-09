@@ -1,15 +1,2 @@
-<h1>This is the starting page.</h1><br/>
-
-<br/>
-<h2>DaoPayIframeParameters</h2>
-<pre>
-<%= h(@myParams.to_xml) %>	
-</pre>
-<br/>
-
-<b>Payment URL:</b>
-<%= @myParams.payment_url %>
-<br/>
-
-<h2>iFrame:</h2>
-<%= daopay_iframe(@myParams) %>
+<h1>DaoPay Test</h1><br/>
+<%= link_to 'Neue Zahlung starten', {:controller => 'DaoPay', :action => 'new'} %>
