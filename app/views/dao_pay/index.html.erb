@@ -1,6 +1,15 @@
-This is the starting page.<br/>
+<h1>This is the starting page.</h1><br/>
 
-<% #<iframe height="550" width="415" marginheight="0" marginwidth="0" frameborder="0" src=" http://daopay.com/pay/?appcode=54460&price=2"> </iframe> %>
+<br/>
+<h2>DaoPayIframeParameters</h2>
+<pre>
+<%= h(@myParams.to_xml) %>	
+</pre>
+<br/>
 
-<%= @myParams.orderno %>
-<%= @myParams.appcode %>
+<b>Payment URL:</b>
+<%= @myParams.payment_url %>
+<br/>
+
+<h2>iFrame:</h2>
+<%= daopay_iframe(@myParams) %>

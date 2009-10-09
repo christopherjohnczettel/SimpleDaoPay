@@ -4,7 +4,7 @@
 production:
   gateway_url:  http://daopay.com/pay/
   appcode:      54460
-  success_url:  http://localhost/I_am_happy
+  successurl:  http://localhost/I_am_happy
   currency:     EUR
   style:        
   mcx:
@@ -12,7 +12,7 @@ production:
 testing:
   gateway_url:  http://daopay.com/pay/
   appcode:      54460
-  success_url:  http://localhost/I_am_happy
+  successurl:  http://localhost/I_am_happy
   currency:     EUR
   style:        
   mcx:
@@ -20,7 +20,8 @@ testing:
 development:
   gateway_url:  http://daopay.com/pay/
   appcode:      54460
-  success_url:  http://localhost/I_am_happy
+  #successurl:  http://localhost/I_am_happy
+  successurl:   
   currency:     EUR
   style:        
   mcx:          

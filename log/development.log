@@ -298,3 +298,636 @@ Completed in 118ms (View: 73, DB: 0) | 200 OK [http://localhost/DaoPay]
 Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 14:09:39) [GET]
 Rendering dao_pay/index
 Completed in 13ms (View: 5, DB: 0) | 200 OK [http://localhost/DaoPay]
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 14:14:03) [GET]
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.include?):
+  app/models/dao_pay_iframe_parameter.rb:33:in `initialize'
+  app/controllers/dao_pay_controller.rb:4:in `new'
+  app/controllers/dao_pay_controller.rb:4:in `index'
+
+Rendered rescues/_trace (37.9ms)
+Rendered rescues/_request_and_response (1.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 14:15:07) [GET]
+
+NameError (undefined local variable or method `this' for #<DaoPayIframeParameter:0x266d4f4>):
+  app/models/dao_pay_iframe_parameter.rb:34:in `initialize'
+  app/controllers/dao_pay_controller.rb:4:in `new'
+  app/controllers/dao_pay_controller.rb:4:in `index'
+
+Rendered rescues/_trace (33.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 14:15:43) [GET]
+
+ActiveRecord::RecordInvalid (Validation failed: Appcode can't be blank, Appcode is not a number, Appcode is not included in the list):
+  app/controllers/dao_pay_controller.rb:9:in `index'
+
+Rendered rescues/_trace (34.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (unprocessable_entity)
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 14:15:49) [GET]
+Rendering dao_pay/index
+Completed in 7ms (View: 1, DB: 0) | 200 OK [http://localhost/DaoPay]
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 14:17:46) [GET]
+
+NoMethodError (undefined method `gateway_url=' for #<DaoPayIframeParameter:0x240c980>):
+  app/models/dao_pay_iframe_parameter.rb:36:in `initialize'
+  app/controllers/dao_pay_controller.rb:4:in `new'
+  app/controllers/dao_pay_controller.rb:4:in `index'
+
+Rendered rescues/_trace (129.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 14:17:54) [GET]
+Rendering dao_pay/index
+Completed in 13ms (View: 6, DB: 0) | 200 OK [http://localhost/DaoPay]
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 14:18:00) [GET]
+Rendering dao_pay/index
+Completed in 18ms (View: 10, DB: 0) | 200 OK [http://localhost/DaoPay]
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 14:18:10) [GET]
+Rendering dao_pay/index
+Completed in 14ms (View: 7, DB: 0) | 200 OK [http://localhost/DaoPay]
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 14:18:19) [GET]
+Rendering dao_pay/index
+Completed in 12ms (View: 2, DB: 0) | 200 OK [http://localhost/DaoPay]
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 14:19:22) [GET]
+Rendering dao_pay/index
+Completed in 13ms (View: 6, DB: 0) | 200 OK [http://localhost/DaoPay]
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 14:19:54) [GET]
+Rendering dao_pay/index
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/DaoPay]
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 14:20:01) [GET]
+Rendering dao_pay/index
+Completed in 14ms (View: 7, DB: 0) | 200 OK [http://localhost/DaoPay]
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 14:20:14) [GET]
+Rendering dao_pay/index
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://localhost/DaoPay]
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 14:23:52) [GET]
+
+ActiveRecord::UnknownAttributeError (unknown attribute: success_url):
+  app/models/dao_pay_iframe_parameter.rb:35:in `initialize'
+  app/controllers/dao_pay_controller.rb:4:in `new'
+  app/controllers/dao_pay_controller.rb:4:in `index'
+
+Rendered rescues/_trace (104.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 14:24:08) [GET]
+
+ActiveRecord::UnknownAttributeError (unknown attribute: success_url):
+  app/models/dao_pay_iframe_parameter.rb:35:in `initialize'
+  app/controllers/dao_pay_controller.rb:4:in `new'
+  app/controllers/dao_pay_controller.rb:4:in `index'
+
+Rendered rescues/_trace (31.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 14:24:09) [GET]
+
+ActiveRecord::UnknownAttributeError (unknown attribute: success_url):
+  app/models/dao_pay_iframe_parameter.rb:35:in `initialize'
+  app/controllers/dao_pay_controller.rb:4:in `new'
+  app/controllers/dao_pay_controller.rb:4:in `index'
+
+Rendered rescues/_trace (31.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 14:24:09) [GET]
+
+ActiveRecord::UnknownAttributeError (unknown attribute: success_url):
+  app/models/dao_pay_iframe_parameter.rb:35:in `initialize'
+  app/controllers/dao_pay_controller.rb:4:in `new'
+  app/controllers/dao_pay_controller.rb:4:in `index'
+
+Rendered rescues/_trace (108.0ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 14:24:09) [GET]
+
+ActiveRecord::UnknownAttributeError (unknown attribute: success_url):
+  app/models/dao_pay_iframe_parameter.rb:35:in `initialize'
+  app/controllers/dao_pay_controller.rb:4:in `new'
+  app/controllers/dao_pay_controller.rb:4:in `index'
+
+Rendered rescues/_trace (32.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 14:24:20) [GET]
+
+ActiveRecord::UnknownAttributeError (unknown attribute: gateway_url):
+  app/models/dao_pay_iframe_parameter.rb:35:in `initialize'
+  app/controllers/dao_pay_controller.rb:4:in `new'
+  app/controllers/dao_pay_controller.rb:4:in `index'
+
+Rendered rescues/_trace (36.0ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 14:24:48) [GET]
+Rendering dao_pay/index
+Completed in 17ms (View: 9, DB: 0) | 200 OK [http://localhost/DaoPay]
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 14:25:28) [GET]
+
+ActiveRecord::RecordInvalid (Validation failed: Price can't be blank, Price is not a number):
+  app/models/dao_pay_iframe_parameter.rb:36:in `initialize'
+  app/controllers/dao_pay_controller.rb:4:in `new'
+  app/controllers/dao_pay_controller.rb:4:in `index'
+
+Rendered rescues/_trace (104.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (unprocessable_entity)
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 14:25:57) [GET]
+Rendering dao_pay/index
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/DaoPay]
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 14:26:29) [GET]
+Rendering dao_pay/index
+
+ActionView::TemplateError (undefined method `iframe_url' for #<DaoPayIframeParameter:0x252c810>) on line #12 of app/views/dao_pay/index.html.erb:
+9: <%= h(@myParams.to_xml) %>	
+10: </pre>
+11: <h2>IFrame URL</h2>
+12: <%= h(@myParams.iframe_url) %>
+
+    app/views/dao_pay/index.html.erb:12
+    app/controllers/dao_pay_controller.rb:11:in `index'
+
+Rendered rescues/_trace (39.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 14:26:42) [GET]
+Rendering dao_pay/index
+Completed in 10ms (View: 3, DB: 0) | 200 OK [http://localhost/DaoPay]
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 14:26:57) [GET]
+Rendering dao_pay/index
+Completed in 10ms (View: 3, DB: 0) | 200 OK [http://localhost/DaoPay]
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 14:27:13) [GET]
+Rendering dao_pay/index
+Completed in 9ms (View: 3, DB: 0) | 200 OK [http://localhost/DaoPay]
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 14:30:18) [GET]
+Rendering dao_pay/index
+Completed in 11ms (View: 4, DB: 0) | 200 OK [http://localhost/DaoPay]
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 14:31:38) [GET]
+Rendering dao_pay/index
+
+ActionView::TemplateError (undefined local variable or method `url' for #<DaoPayIframeParameter:0x25adf28>) on line #12 of app/views/dao_pay/index.html.erb:
+9: <%= h(@myParams.to_xml) %>	
+10: </pre>
+11: <h2>IFrame URL</h2>
+12: <%= h(@myParams.iframe_url) %>
+
+    app/models/dao_pay_iframe_parameter.rb:44:in `iframe_url'
+    app/views/dao_pay/index.html.erb:12
+    app/controllers/dao_pay_controller.rb:9:in `index'
+
+Rendered rescues/_trace (39.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 14:31:46) [GET]
+Rendering dao_pay/index
+Completed in 9ms (View: 3, DB: 0) | 200 OK [http://localhost/DaoPay]
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 14:31:56) [GET]
+Rendering dao_pay/index
+Completed in 11ms (View: 4, DB: 0) | 200 OK [http://localhost/DaoPay]
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 14:33:14) [GET]
+Rendering dao_pay/index
+Completed in 12ms (View: 3, DB: 0) | 200 OK [http://localhost/DaoPay]
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 14:41:39) [GET]
+Rendering dao_pay/index
+
+ActionView::TemplateError (undefined local variable or method `keys' for #<DaoPayIframeParameter:0x2365928>) on line #12 of app/views/dao_pay/index.html.erb:
+9: <%= h(@myParams.to_xml) %>	
+10: </pre>
+11: <h2>IFrame URL</h2>
+12: <%= h(@myParams.iframe_url) %>
+
+    app/models/dao_pay_iframe_parameter.rb:45:in `iframe_url'
+    app/views/dao_pay/index.html.erb:12
+    app/controllers/dao_pay_controller.rb:9:in `index'
+
+Rendered rescues/_trace (42.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 14:42:30) [GET]
+Rendering dao_pay/index
+
+ActionView::TemplateError (undefined local variable or method `elements' for #<DaoPayIframeParameter:0x250ab0c>) on line #12 of app/views/dao_pay/index.html.erb:
+9: <%= h(@myParams.to_xml) %>	
+10: </pre>
+11: <h2>IFrame URL</h2>
+12: <%= h(@myParams.iframe_url) %>
+
+    app/models/dao_pay_iframe_parameter.rb:48:in `iframe_url'
+    app/models/dao_pay_iframe_parameter.rb:47:in `times'
+    app/models/dao_pay_iframe_parameter.rb:47:in `iframe_url'
+    app/views/dao_pay/index.html.erb:12
+    app/controllers/dao_pay_controller.rb:9:in `index'
+
+Rendered rescues/_trace (44.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 14:42:42) [GET]
+Rendering dao_pay/index
+
+ActionView::TemplateError (undefined local variable or method `values' for #<DaoPayIframeParameter:0x23ade6c>) on line #12 of app/views/dao_pay/index.html.erb:
+9: <%= h(@myParams.to_xml) %>	
+10: </pre>
+11: <h2>IFrame URL</h2>
+12: <%= h(@myParams.iframe_url) %>
+
+    app/models/dao_pay_iframe_parameter.rb:48:in `iframe_url'
+    app/models/dao_pay_iframe_parameter.rb:47:in `times'
+    app/models/dao_pay_iframe_parameter.rb:47:in `iframe_url'
+    app/views/dao_pay/index.html.erb:12
+    app/controllers/dao_pay_controller.rb:9:in `index'
+
+Rendered rescues/_trace (43.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 14:42:58) [GET]
+Rendering dao_pay/index
+
+ActionView::TemplateError (undefined method `attribute' for #<DaoPayIframeParameter:0x250b46c>) on line #12 of app/views/dao_pay/index.html.erb:
+9: <%= h(@myParams.to_xml) %>	
+10: </pre>
+11: <h2>IFrame URL</h2>
+12: <%= h(@myParams.iframe_url) %>
+
+    app/models/dao_pay_iframe_parameter.rb:45:in `iframe_url'
+    app/views/dao_pay/index.html.erb:12
+    app/controllers/dao_pay_controller.rb:9:in `index'
+
+Rendered rescues/_trace (41.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 14:44:27) [GET]
+Rendering dao_pay/index
+
+ActionView::TemplateError (can't convert Array into String) on line #12 of app/views/dao_pay/index.html.erb:
+9: <%= h(@myParams.to_xml) %>	
+10: </pre>
+11: <h2>IFrame URL</h2>
+12: <%= h(@myParams.iframe_url) %>
+
+    app/models/dao_pay_iframe_parameter.rb:54:in `+'
+    app/models/dao_pay_iframe_parameter.rb:54:in `iframe_url'
+    app/views/dao_pay/index.html.erb:12
+    app/controllers/dao_pay_controller.rb:9:in `index'
+
+Rendered rescues/_trace (44.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 14:45:04) [GET]
+Rendering dao_pay/index
+
+ActionView::TemplateError (can't convert Array into String) on line #12 of app/views/dao_pay/index.html.erb:
+9: <%= h(@myParams.to_xml) %>	
+10: </pre>
+11: <h2>IFrame URL</h2>
+12: <%= @myParams.iframe_url %>
+
+    app/models/dao_pay_iframe_parameter.rb:54:in `+'
+    app/models/dao_pay_iframe_parameter.rb:54:in `iframe_url'
+    app/views/dao_pay/index.html.erb:12
+    app/controllers/dao_pay_controller.rb:9:in `index'
+
+Rendered rescues/_trace (40.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 14:45:36) [GET]
+Rendering dao_pay/index
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/DaoPay]
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 14:45:52) [GET]
+Rendering dao_pay/index
+Completed in 124ms (View: 82, DB: 0) | 200 OK [http://localhost/DaoPay]
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 14:46:22) [GET]
+Rendering dao_pay/index
+Completed in 48ms (View: 3, DB: 0) | 200 OK [http://localhost/DaoPay]
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 14:46:59) [GET]
+
+SyntaxError (/Users/christopherjohnczettel/Sites/glp/daopay/app/models/dao_pay_iframe_parameter.rb:54: syntax error, unexpected tIDENTIFIER, expecting kEND
+...elf.gateway_url + "?" elements# +  CGI.escape(elements.to_s)...
+                              ^):
+  app/controllers/dao_pay_controller.rb:4:in `index'
+
+Rendered rescues/_trace (36.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 14:47:08) [GET]
+
+SyntaxError (/Users/christopherjohnczettel/Sites/glp/daopay/app/models/dao_pay_iframe_parameter.rb:54: syntax error, unexpected tIDENTIFIER, expecting kEND
+...elf.gateway_url + "?" elements.to_s # +  CGI.escape(elements...
+                              ^):
+  app/controllers/dao_pay_controller.rb:4:in `index'
+
+Rendered rescues/_trace (36.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 14:47:10) [GET]
+
+SyntaxError (/Users/christopherjohnczettel/Sites/glp/daopay/app/models/dao_pay_iframe_parameter.rb:54: syntax error, unexpected tIDENTIFIER, expecting kEND
+...elf.gateway_url + "?" elements.to_s # +  CGI.escape(elements...
+                              ^):
+  app/controllers/dao_pay_controller.rb:4:in `index'
+
+Rendered rescues/_trace (114.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 14:47:22) [GET]
+Rendering dao_pay/index
+Completed in 24ms (View: 3, DB: 0) | 200 OK [http://localhost/DaoPay]
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 14:47:54) [GET]
+Rendering dao_pay/index
+
+ActionView::TemplateError (undefined method `empty?' for 20.22:Float) on line #12 of app/views/dao_pay/index.html.erb:
+9: <%= h(@myParams.to_xml) %>	
+10: </pre>
+11: <h2>IFrame URL</h2>
+12: <%= @myParams.iframe_url %>
+
+    app/models/dao_pay_iframe_parameter.rb:50:in `iframe_url'
+    app/models/dao_pay_iframe_parameter.rb:49:in `times'
+    app/models/dao_pay_iframe_parameter.rb:49:in `iframe_url'
+    app/views/dao_pay/index.html.erb:12
+    app/controllers/dao_pay_controller.rb:9:in `index'
+
+Rendered rescues/_trace (42.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 14:47:55) [GET]
+Rendering dao_pay/index
+
+ActionView::TemplateError (undefined method `empty?' for 20.22:Float) on line #12 of app/views/dao_pay/index.html.erb:
+9: <%= h(@myParams.to_xml) %>	
+10: </pre>
+11: <h2>IFrame URL</h2>
+12: <%= @myParams.iframe_url %>
+
+    app/models/dao_pay_iframe_parameter.rb:50:in `iframe_url'
+    app/models/dao_pay_iframe_parameter.rb:49:in `times'
+    app/models/dao_pay_iframe_parameter.rb:49:in `iframe_url'
+    app/views/dao_pay/index.html.erb:12
+    app/controllers/dao_pay_controller.rb:9:in `index'
+
+Rendered rescues/_trace (118.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 14:48:02) [GET]
+Rendering dao_pay/index
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/DaoPay]
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 14:48:10) [GET]
+Rendering dao_pay/index
+Completed in 17ms (View: 5, DB: 0) | 200 OK [http://localhost/DaoPay]
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 14:49:03) [GET]
+Rendering dao_pay/index
+Completed in 12ms (View: 3, DB: 0) | 200 OK [http://localhost/DaoPay]
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 14:49:59) [GET]
+Rendering dao_pay/index
+Completed in 85ms (View: 3, DB: 0) | 200 OK [http://localhost/DaoPay]
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 14:50:00) [GET]
+Rendering dao_pay/index
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/DaoPay]
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 14:59:12) [GET]
+
+SyntaxError (/Users/christopherjohnczettel/Sites/glp/daopay/app/models/dao_pay_iframe_parameter.rb:57: syntax error, unexpected ',', expecting kEND
+    self.attributes.each |key, value|
+                              ^
+/Users/christopherjohnczettel/Sites/glp/daopay/app/models/dao_pay_iframe_parameter.rb:73: syntax error, unexpected kEND, expecting $end):
+  app/controllers/dao_pay_controller.rb:4:in `index'
+
+Rendered rescues/_trace (34.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 14:59:34) [GET]
+Rendering dao_pay/index
+Completed in 79ms (View: 3, DB: 0) | 200 OK [http://localhost/DaoPay]
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 15:02:03) [GET]
+Rendering dao_pay/index
+
+ActionView::TemplateError (undefined method `join!' for #<Array:0x264abc0>) on line #12 of app/views/dao_pay/index.html.erb:
+9: <%= h(@myParams.to_xml) %>	
+10: </pre>
+11: <h2>IFrame URL</h2>
+12: <%= @myParams.iframe_url %>
+
+    app/models/dao_pay_iframe_parameter.rb:62:in `iframe_url'
+    app/views/dao_pay/index.html.erb:12
+    app/controllers/dao_pay_controller.rb:9:in `index'
+
+Rendered rescues/_trace (40.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 15:02:32) [GET]
+Rendering dao_pay/index
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/DaoPay]
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 15:03:04) [GET]
+
+SyntaxError (/Users/christopherjohnczettel/Sites/glp/daopay/app/models/dao_pay_iframe_parameter.rb:64: syntax error, unexpected ')', expecting kEND
+...?" +  elements.join('&').to_s).gsub("+", "%20")
+                              ^):
+  app/controllers/dao_pay_controller.rb:4:in `index'
+
+Rendered rescues/_trace (35.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 15:03:14) [GET]
+Rendering dao_pay/index
+
+ActionView::TemplateError (private method `gsub' called for 20.22:Float) on line #12 of app/views/dao_pay/index.html.erb:
+9: <%= h(@myParams.to_xml) %>	
+10: </pre>
+11: <h2>IFrame URL</h2>
+12: <%= @myParams.iframe_url %>
+
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/cgi.rb:342:in `escape'
+    app/models/dao_pay_iframe_parameter.rb:59:in `iframe_url'
+    app/models/dao_pay_iframe_parameter.rb:57:in `each'
+    app/models/dao_pay_iframe_parameter.rb:57:in `iframe_url'
+    app/views/dao_pay/index.html.erb:12
+    app/controllers/dao_pay_controller.rb:9:in `index'
+
+Rendered rescues/_trace (43.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 15:03:24) [GET]
+Rendering dao_pay/index
+
+ActionView::TemplateError (private method `gsub' called for 20.22:Float) on line #12 of app/views/dao_pay/index.html.erb:
+9: <%= h(@myParams.to_xml) %>	
+10: </pre>
+11: <h2>IFrame URL</h2>
+12: <%= @myParams.iframe_url %>
+
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/cgi.rb:342:in `escape'
+    app/models/dao_pay_iframe_parameter.rb:59:in `iframe_url'
+    app/models/dao_pay_iframe_parameter.rb:57:in `each'
+    app/models/dao_pay_iframe_parameter.rb:57:in `iframe_url'
+    app/views/dao_pay/index.html.erb:12
+    app/controllers/dao_pay_controller.rb:9:in `index'
+
+Rendered rescues/_trace (41.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 15:03:26) [GET]
+Rendering dao_pay/index
+
+ActionView::TemplateError (private method `gsub' called for 20.22:Float) on line #12 of app/views/dao_pay/index.html.erb:
+9: <%= h(@myParams.to_xml) %>	
+10: </pre>
+11: <h2>IFrame URL</h2>
+12: <%= @myParams.iframe_url %>
+
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/cgi.rb:342:in `escape'
+    app/models/dao_pay_iframe_parameter.rb:59:in `iframe_url'
+    app/models/dao_pay_iframe_parameter.rb:57:in `each'
+    app/models/dao_pay_iframe_parameter.rb:57:in `iframe_url'
+    app/views/dao_pay/index.html.erb:12
+    app/controllers/dao_pay_controller.rb:9:in `index'
+
+Rendered rescues/_trace (46.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 15:05:25) [GET]
+Rendering dao_pay/index
+Completed in 10ms (View: 3, DB: 0) | 200 OK [http://localhost/DaoPay]
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 15:05:54) [GET]
+Rendering dao_pay/index
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/DaoPay]
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 15:06:45) [GET]
+Rendering dao_pay/index
+Completed in 120ms (View: 85, DB: 0) | 200 OK [http://localhost/DaoPay]
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 15:13:16) [GET]
+Rendering dao_pay/index
+Completed in 15ms (View: 7, DB: 0) | 200 OK [http://localhost/DaoPay]
+
+
+Processing DaoPayController#index (for 127.0.0.1 at 2009-10-09 15:16:27) [GET]
+Rendering dao_pay/index
+Completed in 16ms (View: 8, DB: 0) | 200 OK [http://localhost/DaoPay]
