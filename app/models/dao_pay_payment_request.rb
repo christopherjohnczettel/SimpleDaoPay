@@ -1,4 +1,4 @@
-class DaoPayIframeParameter < ActiveRecord::BaseWithoutTable
+class DaoPayPaymentRequest < ActiveRecord::BaseWithoutTable
   require 'cgi'
   
   

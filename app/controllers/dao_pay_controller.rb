@@ -4,7 +4,7 @@ class DaoPayController < ApplicationController
   end
   
   def new
-    @myParams = DaoPayIframeParameter.new
+    @myParams = DaoPayPaymentRequest.new
     @myParams.price = rand(10) + 1
     @myParams.successurl = "http://localhost:3000/DaoPay/show"
     #@myParams.orderno = "10026969" + (rand(9)+1).to_s
@@ -17,5 +17,8 @@ class DaoPayController < ApplicationController
   
   def show
     @response = params
+  end
+  
+  def status_update
   end
 end
